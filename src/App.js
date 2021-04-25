@@ -11,7 +11,7 @@ function App() {
       <table className="calcTable">
         <tbody>
           <tr>
-            <td><input type="text" value={number} onChange={e => setNumber(onlyPositive(e.target.value))}/></td>
+            <td><input type="number" value={number} onChange={e => setNumber(onlyPositive(e.target.value))}/></td>
             <td>
               {calcOption}
               <select value={calcOption} onChange={e => setCalcOption(e.target.value)}>
